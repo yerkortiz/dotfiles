@@ -3,4 +3,4 @@ require('config.lazy')
 require('config.lsp')
 require('config.mappings')
 require('config.colorscheme')
-
+require('config.telescope')
