@@ -59,6 +59,8 @@ local lualine = {
 
 local bufferline = 'akinsho/bufferline.nvim'
 
+local vimtex = 'lervag/vimtex'
+
 require("lazy").setup({
 	treesitter,
 	lsp,
@@ -75,4 +77,5 @@ require("lazy").setup({
     neotree,
     lualine,
     bufferline,
+    vimtex,
 })
