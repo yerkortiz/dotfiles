@@ -39,6 +39,9 @@ color = '#ff9e64'
 index = 17
 color = '#db4b4b'
 
+
+[font]
+    size = 14
 [font.normal]
     family = "Mononoki Nerd Font Mono"
 [font.bold]
