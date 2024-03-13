@@ -41,7 +41,7 @@ color = '#db4b4b'
 
 
 [font]
-    size = 14
+    size = 15
 [font.normal]
     family = "Mononoki Nerd Font Mono"
 [font.bold]
