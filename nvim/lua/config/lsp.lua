@@ -1,13 +1,4 @@
-local langs = {
-	c = "c",
-	cpp = "cpp",
-	go = "go",
-	tex = "latex",
-	lua = "lua",
-}
-
 local lspconfig = require('lspconfig')
-
 
 lspconfig.gopls.setup({})
 lspconfig.clangd.setup({})
@@ -20,6 +11,10 @@ lspconfig.lua_ls.setup({
             },
         },
     },
+})
+
+lspconfig.java_language_server.setup({
+    cmd = {"jdtls"},
 })
 
 local capabilities = vim.lsp.protocol.make_client_capabilities()
