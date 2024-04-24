@@ -1,44 +1,31 @@
-# TokyoNight Alacritty Colors
+# Colors (Material Theme)
+
 # Default colors
 [colors.primary]
-background = '#1a1b26'
-foreground = '#c0caf5'
-
-#[colors.cursor]
-#cursor = '#c0caf5'
-#text = '#1a1b26'
+background = '#1e282d'
+foreground = '#c4c7d1'
 
 # Normal colors
 [colors.normal]
-black = '#15161e'
-red = '#f7768e'
-green = '#9ece6a'
-yellow = '#e0af68'
-blue = '#7aa2f7'
-magenta = '#bb9af7'
-cyan = '#7dcfff'
-white = '#a9b1d6'
+black   = '#666666'
+red     = '#eb606b'
+green   = '#c3e88d'
+yellow  = '#f7eb95'
+blue    = '#80cbc4'
+magenta = '#ff2f90'
+cyan    = '#aeddff'
+white   = '#ffffff'
 
 # Bright colors
 [colors.bright]
-black = '#414868'
-red = '#f7768e'
-green = '#9ece6a'
-yellow = '#e0af68'
-blue = '#7aa2f7'
-magenta = '#bb9af7'
-cyan = '#7dcfff'
-white = '#c0caf5'
-
-# Indexed Colors
-[[colors.indexed_colors]]
-index = 16
-color = '#ff9e64'
-
-[[colors.indexed_colors]]
-index = 17
-color = '#db4b4b'
-
+black   = '#ff262b'
+red     = '#eb606b'
+green   = '#c3e88d'
+yellow  = '#f7eb95'
+blue    = '#7dc6bf'
+magenta = '#6c71c4'
+cyan    = '#35434d'
+white   = '#ffffff'
 
 [font]
     size = 14
