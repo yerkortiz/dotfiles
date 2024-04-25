@@ -18,7 +18,7 @@ local mason =  "williamboman/mason.nvim"
 
 --colorscheme
 --local everforest = "neanias/everforest-nvim"
-local tokyonight = "folke/tokyonight.nvim"
+--local tokyonight = "folke/tokyonight.nvim"
 
 -- telescope
 local plenary = "nvim-lua/plenary.nvim"
@@ -61,11 +61,14 @@ local bufferline = 'akinsho/bufferline.nvim'
 
 local vimtex = 'lervag/vimtex'
 
+local material_theme = 'marko-cerovac/material.nvim'
+
 require("lazy").setup({
 	treesitter,
 	lsp,
 	mason,
-	tokyonight,
+	--tokyonight,
+    material_theme,
     plenary,
     telescope,
     telescope_fuzzy,
