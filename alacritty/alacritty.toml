@@ -2,3 +2,9 @@ import = ["~/.config/alacritty/themes/everforest_dark.toml"]
 
 font.normal.family = "Mononoki Nerd Font"
 font.size = 15.0
+
+[keyboard]
+bindings = [
+  { key = "F", mods = "Alt", chars = "\u001BF" }, # Alt + F (Move Forward current Word)
+  { key = "B",  mods = "Alt", chars = "\u001BB" }, # Alt + B (Move Backward current word)
+]
