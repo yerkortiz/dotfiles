@@ -15,16 +15,33 @@ return {
 
             vim.lsp.config.lua_ls = {
                 capabilities = capabilities,
-                settings = {
-                    Lua = {
-                    }
-                }
+                root_dir = vim.fs.dirname(vim.fs.find({ ".luarc.json", ".git" }, { upward = true })[1]),
+            }
+
+            vim.lsp.config.clangd = {
+                capabilities = capabilities,
+            }
+
+            vim.lsp.config.pyright = {
+                capabilities = capabilities,
             }
 
             vim.api.nvim_create_autocmd("FileType", {
                 pattern = "lua",
                 callback = function()
                     vim.lsp.start(vim.lsp.config.lua_ls)
+                end,
+            })
+            vim.api.nvim_create_autocmd("FileType", {
+                pattern = { "c", "cpp" },
+                callback = function()
+                    vim.lsp.start(vim.lsp.config.clangd)
+                end,
+            })
+            vim.api.nvim_create_autocmd("FileType", {
+                pattern = "python",
+                callback = function()
+                    vim.lsp.start(vim.lsp.config.pyright)
                 end,
             })
 
