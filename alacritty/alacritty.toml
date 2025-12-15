@@ -1,0 +1,57 @@
+[env]
+TERM = "xterm-256color"
+
+[window]
+padding = { x = 10, y = 10 }
+decorations = "buttonless"
+opacity = 0.8
+blur = true
+startup_mode = "Windowed"
+dynamic_title = true
+
+[font]
+size = 14.0
+
+[font.normal]
+family = "SpaceMono Nerd Font Mono"
+style = "Regular"
+
+[font.bold]
+family = "SpaceMono Nerd Font Mono"
+style = "Bold"
+
+[font.italic]
+family = "SpaceMono Nerd Font Mono"
+style = "Italic"
+
+[cursor]
+style = { shape = "Block", blinking = "On" }
+
+[mouse]
+hide_when_typing = true
+
+[colors.primary]
+background = "#2b3339"
+foreground = "#d3c6aa"
+dim_foreground = "#a7c080"
+bright_foreground = "#d3c6aa"
+
+[colors.normal]
+black   = "#4b565c"
+red     = "#e67e80"
+green   = "#a7c080"
+yellow  = "#dbbc7f"
+blue    = "#7fbbb3"
+magenta = "#d699b6"
+cyan    = "#83c092"
+white   = "#d3c6aa"
+
+[colors.bright]
+black   = "#5c6a72"
+red     = "#e67e80"
+green   = "#a7c080"
+yellow  = "#dbbc7f"
+blue    = "#7fbbb3"
+magenta = "#d699b6"
+cyan    = "#83c092"
+white   = "#d3c6aa"
