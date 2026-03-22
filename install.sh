@@ -31,4 +31,6 @@ for DIR in "${CONFIG_DIRS[@]}"; do
     create_symlink "$DOTFILES_DIR/$DIR" "$CONFIG_DIR/$DIR"
 done
 
+create_symlink "$DOTFILES_DIR/zsh/.zshrc" "$HOME/.zshrc"
+
 echo -e "${GREEN}Done!${NC}"
