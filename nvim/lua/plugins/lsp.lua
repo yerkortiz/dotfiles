@@ -26,6 +26,10 @@ return {
                 capabilities = capabilities,
             }
 
+            vim.lsp.config.texlab = {
+                capabilities = capabilities,
+            }
+
             vim.api.nvim_create_autocmd("FileType", {
                 pattern = "lua",
                 callback = function()
@@ -42,6 +46,12 @@ return {
                 pattern = "python",
                 callback = function()
                     vim.lsp.start(vim.lsp.config.pyright)
+                end,
+            })
+            vim.api.nvim_create_autocmd("FileType", {
+                pattern = "tex",
+                callback = function()
+                    vim.lsp.start(vim.lsp.config.texlab)
                 end,
             })
 
