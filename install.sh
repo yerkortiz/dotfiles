@@ -4,14 +4,27 @@ set -euo pipefail
 
 DOTFILES_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-readonly SUPPORTED_OS=("Darwin" "Linux")
-readonly SUPPORTED_PKGM=("brew" "apt")
-readonly REQUIRED_ENVS=("DOTFILES_PKG_MANAGER" "DOTFILES_INSTALL_PATH")
-
-readonly DOTFILES_DEPS=("nvim" "zsh")
+readonly SUPPORTED_OS=(
+    "Darwin" 
+    "Linux"
+)
+readonly SUPPORTED_PKGM=(
+    "brew" 
+    "apt"
+)
+readonly REQUIRED_ENVS=("
+    DOTFILES_PKG_MANAGER" 
+    "DOTFILES_INSTALL_PATH"
+)
+readonly DOTFILES_DEPS=(
+    "nvim"
+    "zsh"
+)
 readonly DOTFILES_LINKS=(
     "nvim:${HOME}/.config/nvim"
     "zsh/.zshrc:${HOME}/.zshrc"
+    "emacs:${HOME}/.config/emacs"
+    "zed:${HOME}/.config/zed"
 )
 
 readonly ERR_OS_UNSUPPORTED="[ERROR] Operating System not supported:"
